@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Websocket</title>
+        <script type="text/javascript">
+        var hostpart = location.origin.replace(/^http/, 'ws')
+	 var sock = new WebSocket(hostpart + '/properties/listingEventPush');
+	 sock.onopen = function() {
+		console.log('open');
+	 }
+
+	 sock.onmessage = function(e) {
+	    var messageData = JSON.parse(e.data);
+		var listingId = messageData.listingId;
+		var description = messageData.description;
+		var price = messageData.price;
+		var table = document.getElementById("listingSubscribed");
+		var newRow = table.insertRow(table.rows.length);
+		var cell1 = newRow.insertCell(0);
+		cell1.innerHTML = description;
+        var cell2 = newRow.insertCell(1);
+        cell2.innerHTML = price;
+	 }
+
+	 sock.onclose = function() {
+		console.log('close');
+	 }
+   </script>
+  </head>
+  <body>
+   <div>
+     <table id="listingSubscribed">
+        <tr>
+        <th>Description</th>
+        <th>Price</th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

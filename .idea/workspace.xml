@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7614e30c-4c2a-4507-a6e9-f87e44a4545b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mXdXr2MkDlrShNkxtse2xofB0x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="org.jxtech.propertytrade.platform.common.util.file" />
+      <recent name="org.jxtech.propertytrade.platform.listing.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.org.jxtech.propertytrade.platform.BootMainKt">
+    <configuration name="ListingPersistenceTest.performTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.jxtech.propertytrade.platform.listing.persistence.ListingPersistenceTest.performTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PropertyPersistenceTest.performTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.jxtech.propertytrade.platform.property.persistence.PropertyPersistenceTest.performTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="org.jxtech.propertytrade.platform.BootMainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="propertytrade.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.jxtech.propertytrade.platform.BootMainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.org.jxtech.propertytrade.platform.BootMainKt" />
+        <item itemvalue="Gradle.PropertyPersistenceTest.performTest" />
+        <item itemvalue="Gradle.ListingPersistenceTest.performTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7614e30c-4c2a-4507-a6e9-f87e44a4545b" name="Default Changelist" comment="" />
+      <created>1609643911748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609643911748</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="536" y="196" key="#com.intellij.ide.util.MemberChooser" timestamp="1610329489505">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="536" y="196" key="#com.intellij.ide.util.MemberChooser/0.0.1500.960@0.0.1500.960" timestamp="1610329489505" />
+    <state x="530" y="126" width="540" height="707" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1610180504208">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="530" y="126" width="540" height="707" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1610180504208" />
+    <state x="618" y="182" width="441" height="594" key="#xdebugger.evaluate" timestamp="1610715819692">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="618" y="182" width="441" height="594" key="#xdebugger.evaluate/0.0.1500.960@0.0.1500.960" timestamp="1610715819692" />
+    <state width="1458" height="283" key="GridCell.Tab.0.bottom" timestamp="1610863534214">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="283" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1610863534214" />
+    <state width="1458" height="283" key="GridCell.Tab.0.center" timestamp="1610863534214">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="283" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1610863534214" />
+    <state width="1458" height="283" key="GridCell.Tab.0.left" timestamp="1610863534214">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="283" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1610863534214" />
+    <state width="1458" height="283" key="GridCell.Tab.0.right" timestamp="1610863534214">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="283" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1610863534214" />
+    <state width="1458" height="414" key="GridCell.Tab.1.bottom" timestamp="1610767055137">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="414" key="GridCell.Tab.1.bottom/0.0.1500.960@0.0.1500.960" timestamp="1610767055137" />
+    <state width="1458" height="414" key="GridCell.Tab.1.center" timestamp="1610767055137">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="414" key="GridCell.Tab.1.center/0.0.1500.960@0.0.1500.960" timestamp="1610767055137" />
+    <state width="1458" height="414" key="GridCell.Tab.1.left" timestamp="1610767055137">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="414" key="GridCell.Tab.1.left/0.0.1500.960@0.0.1500.960" timestamp="1610767055137" />
+    <state width="1458" height="414" key="GridCell.Tab.1.right" timestamp="1610767055137">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="414" key="GridCell.Tab.1.right/0.0.1500.960@0.0.1500.960" timestamp="1610767055137" />
+    <state x="252" y="122" key="SettingsEditor" timestamp="1609648577150">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="252" y="122" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1609648577150" />
+    <state width="756" height="486" key="XDebugger.FullValuePopup" timestamp="1610703298325">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="756" height="486" key="XDebugger.FullValuePopup/0.0.1500.960@0.0.1500.960" timestamp="1610703298325" />
+    <state x="434" y="304" key="com.intellij.ide.util.TipDialog" timestamp="1611060362633">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="434" y="304" key="com.intellij.ide.util.TipDialog/0.0.1500.960@0.0.1500.960" timestamp="1611060362633" />
+    <state x="393" y="95" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609726564099">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="393" y="95" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1500.960@0.0.1500.960" timestamp="1609726564099" />
+    <state x="240" y="216" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1610708334446">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="240" y="216" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1500.960@0.0.1500.960" timestamp="1610708334446" />
+    <state x="431" y="217" width="941" height="524" key="find.popup" timestamp="1610713957307">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="431" y="217" width="941" height="524" key="find.popup/0.0.1500.960@0.0.1500.960" timestamp="1610713957307" />
+    <state x="116" y="82" key="new project wizard" timestamp="1610080016615">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="116" y="82" key="new project wizard/0.0.1500.960@0.0.1500.960" timestamp="1610080016615" />
+    <state x="438" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1610713869414">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="438" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1500.960@0.0.1500.960" timestamp="1610713869414" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/org/jxtech/propertytrade/platform/listing/controller/config/ChannelConfig.kt</url>
+          <line>20</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.11.RELEASE/46af52f9c3a1e01c722394a3b604facf25d0aa91/spring-webmvc-5.2.11.RELEASE-sources.jar!/org/springframework/web/servlet/resource/PathResourceResolver.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.11.RELEASE/46af52f9c3a1e01c722394a3b604facf25d0aa91/spring-webmvc-5.2.11.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
+          <line>1232</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/5.2.11.RELEASE/39422ab9b126666dd26af8b73df6adebb95cf5ce/spring-websocket-5.2.11.RELEASE-sources.jar!/org/springframework/web/socket/server/support/AbstractHandshakeHandler.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.34.v20201102/561a053a014a409d434bca2f96010cbdfe3fc8da/websocket-server-9.4.34.v20201102-sources.jar!/org/eclipse/jetty/websocket/server/WebSocketServerFactory.java</url>
+          <line>593</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
