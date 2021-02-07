@@ -22,11 +22,9 @@ class PropertyPersistenceTest {
     @Test
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     fun performTest() {
-        val property = Property().apply {
-            this.id = 1
+        val property = Property(buildingId = 1).apply {
             this.name = "property1"
             this.description = "whatever price"
-            this.address = "abc street 11"
             this.size = "400 * 400"
             this.version = 1L
             this.createdBy = "james"

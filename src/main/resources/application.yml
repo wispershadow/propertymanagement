@@ -24,7 +24,8 @@ spring:
   mvc:
     static-path-pattern: "/static/**"
   resources:
-    static-locations: "classpath:/web/css/,classpath:/web/html/,classpath:/web/js/"
+    static-locations: "file:/C:/zhanjia/source/myowncode/propertytrade/src/main/resources/web/html/"
+    # static-locations: "classpath:/web/css/,classpath:/web/html/,classpath:/web/js/"
 server:
   port: 8081
   servlet:

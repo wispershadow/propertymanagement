@@ -21,7 +21,7 @@ import javax.persistence.Table
 @SequenceGenerator(name = "LISTING_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "T_LISTING_ID_SEQUENCE")
 class Listing(
     @Column(name = "PROPERTY_ID")
-    val propertyId: Long,
+    val propertyId: Long = -1,
 
     @Column(name = "AGENT_ID")
     val agentId: Long = -1
@@ -39,10 +39,10 @@ class Listing(
         AttributeOverride(name="amount", column = Column(name = "LISTING_PRICE")),
         AttributeOverride(name="currency", column = Column(name = "LISTING_CURRENCY"))
     )
-    var price: Price? = null
+    lateinit var price: Price
 
     @Column(name = "EFFECTIVE_DATE_START", columnDefinition = "DATE")
-    var effectiveDateStart: LocalDate? = null
+    lateinit var effectiveDateStart: LocalDate
 
     @Column(name = "EFFECTIVE_DATE_END", columnDefinition = "DATE")
     var effectiveDateEnd: LocalDate? = null
