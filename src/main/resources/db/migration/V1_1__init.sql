@@ -4,8 +4,8 @@ CREATE TABLE T_LISTING
   PROPERTY_ID BIGINT NOT NULL, --foreign key to M_PROPERTY table to identify the premise of the listing
   AGENT_ID BIGINT NOT NULL, --foreign key to the M_AGENT table to identify the agent who posts this listing
   DESCRIPTION VARCHAR(500),
-  LISTING_PRICE DECIMAL(20, 0),
-  LISTING_CURRENCY VARCHAR(3),
+  LISTING_PRICE DECIMAL(20, 0) NOT NULL,
+  LISTING_CURRENCY VARCHAR(3) NOT NULL,
   EFFECTIVE_DATE_START DATE NOT NULL, -- start date where listing is posted
   EFFECTIVE_DATE_END DATE, -- if the list is closed, end date of the listing
   LISTING_TYPE VARCHAR(20) NOT NULL, -- Rental, sale or both
@@ -23,15 +23,14 @@ CREATE TABLE T_LISTING_PRICE_ADJUST_HISTORY  --leave a history record each time 
 (
   ID BIGINT PRIMARY KEY NOT NULL,
   LISTING_ID BIGINT NOT NULL, --foreign key to T_LISTING
-  LISTING_PRICE DECIMAL(20, 0),
-  LISTING_CURRENCY VARCHAR(3),
+  LISTING_PRICE DECIMAL(20, 0) NOT NULL,
+  LISTING_CURRENCY VARCHAR(3) NOT NULL,
   EFFECTIVE_DATE_START DATE NOT NULL,
   EFFECTIVE_DATE_END DATE NOT NULL
 );
 
-CREATE TABLE T_LISTING_PRICE_DETAIL (
-
-);
+--CREATE TABLE T_LISTING_PRICE_DETAIL (
+--);
 
 
 CREATE TABLE M_AGENT (
@@ -44,7 +43,7 @@ CREATE TABLE M_AGENT (
   LAST_UPDATED_BY VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE M_PERSONAL_AGENT  --additional information for personal agent
+CREATE TABLE M_AGENT_PERSONAL  --additional information for personal agent
 (
   ID BIGINT PRIMARY KEY NOT NULL, --same key as M_AGENT
   FIRST_NAME VARCHAR(30) NOT NULL,
@@ -67,10 +66,10 @@ CREATE TABLE M_ADDRESS_COMPONENT
 (
    ID BIGINT PRIMARY KEY NOT NULL,
    ADDRESS_SCHEMA VARCHAR(500),   -- handle different address format in different region, attribute name, length etc, can be used to validate address
+   ADDRESS_DETAILS VARCHAR(500) NOT NULL, -- json format address details eg: {"address_1", "address_2", "address_3"}
    REGION VARCHAR(20) NOT NULL,
    LOCATION_ID BIGINT,
-   FULL_LOCATION_PATH VARCHAR(100), -- list of locations from root separated by ','
-   ADDRESS_DETAILS VARCHAR(500) -- json format address details eg: {"address_1", "address_2", "address_3"}
+   FULL_LOCATION_PATH VARCHAR(100) -- list of locations from root separated by ','
 );
 
 
@@ -85,7 +84,7 @@ CREATE TABLE M_PROPERTY
   TOTAL_ROOM_NUM INT NOT NULL,
   SIZE VARCHAR(100) NOT NULL,
   TAGS VARCHAR(500), -- a list of keywords used to search properties
-  STATUS VARCHAR(20), -- active/deleted
+  STATUS VARCHAR(20) NOT NULL, -- active/deleted
   VERSION BIGINT NOT NULL,
   CREATED_ON TIMESTAMP NOT NULL,
   CREATED_BY VARCHAR(50) NOT NULL,
@@ -107,7 +106,7 @@ CREATE TABLE M_BUILDING
   TOTAL_STORIES INT NOT NULL,
   TOTAL_FAMILY_NUM INT NOT NULL, -- Only useful when not apartment
   BUILT_YEAR INT NOT NULL,
-  STATUS VARCHAR(20), -- active/deleted
+  STATUS VARCHAR(20) NOT NULL, -- active/deleted
   VERSION BIGINT NOT NULL,
   CREATED_ON TIMESTAMP NOT NULL,
   CREATED_BY VARCHAR(50) NOT NULL,
@@ -130,7 +129,7 @@ CREATE TABLE M_LOCATION_HIERARCHY  -- store location hierarchy country/city/area
   CREATED_BY VARCHAR(50) NOT NULL,
   LAST_UPDATED_ON TIMESTAMP NOT NULL,
   LAST_UPDATED_BY VARCHAR(50) NOT NULL
-)
+);
 
 
 CREATE TABLE M_AMENITY  --Static, a fixed list of amenities can be attached to property or building

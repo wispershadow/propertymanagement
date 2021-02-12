@@ -11,20 +11,20 @@ import javax.persistence.Version
 open class BaseEntity {
     @Version
     @Column(name = "VERSION")
-    var version: Long = 1
+    open var version: Long = 1
 
     @CreatedDate
     @Column(name = "CREATED_ON", columnDefinition = "TIMESTAMP")
-    lateinit var createdOn: LocalDateTime
+    open lateinit var createdOn: LocalDateTime
 
     @Column(name = "CREATED_BY")
-    lateinit var createdBy: String
+    open lateinit var createdBy: String
 
     @LastModifiedDate
     @Column(name = "LAST_UPDATED_ON", columnDefinition = "TIMESTAMP")
-    lateinit var lastUpdatedOn: LocalDateTime
+    open lateinit var lastUpdatedOn: LocalDateTime
 
     @Column(name = "LAST_UPDATED_BY")
-    lateinit var lastUpdatedBy: String
+    open lateinit var lastUpdatedBy: String
 
 }

@@ -6,6 +6,8 @@ import org.junit.jupiter.api.extension.ExtendWith
 import org.jxtech.propertytrade.platform.common.persistence.entity.Price
 import org.jxtech.propertytrade.platform.listing.persistence.config.ListingJpaConfig
 import org.jxtech.propertytrade.platform.listing.persistence.entity.Listing
+import org.jxtech.propertytrade.platform.listing.persistence.entity.ListingPriceAdjustHistory
+import org.jxtech.propertytrade.platform.listing.persistence.repository.ListingPriceAdjustHistoryRepository
 import org.jxtech.propertytrade.platform.listing.persistence.repository.ListingRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
@@ -23,6 +25,9 @@ class ListingPersistenceTest {
     @Autowired
     private lateinit var listingRepository: ListingRepository
 
+    @Autowired
+    private lateinit var listingPriceAdjustHistoryRepository: ListingPriceAdjustHistoryRepository
+
     @Test
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     fun performTest() {
@@ -30,7 +35,6 @@ class ListingPersistenceTest {
             propertyId = 1,
             agentId = 1
         ).apply {
-            this.id = 1
             this.description = "whatever price"
             this.price = Price().apply {
                 this.amount = BigInteger.valueOf(1000)
@@ -49,6 +53,16 @@ class ListingPersistenceTest {
         existingListingOption.map {
             println(it.price?.amount)
         }
+        val listingPriceAdjustHistory = ListingPriceAdjustHistory(listingId = 1).apply {
+            this.price = Price().apply {
+                this.amount = BigInteger.valueOf(500)
+                this.currency = CurrencyCode.USD
+            }
+            this.effectiveDateStart = LocalDate.now().minusDays(5)
+            this.effectiveDateEnd = LocalDate.now().minusDays(4)
+        }
+        listingPriceAdjustHistoryRepository.save(listingPriceAdjustHistory)
+
     }
 }
 
