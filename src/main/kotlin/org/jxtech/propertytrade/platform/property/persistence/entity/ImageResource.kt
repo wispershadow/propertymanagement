@@ -35,5 +35,5 @@ class ImageResource(): BaseEntity()  {
     lateinit var belongToEntityType: String
 
     @Column(name = "REFERENCE_ID")
-    lateinit var referenceId: String
+    var referenceId: Long = -1
 }

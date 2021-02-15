@@ -3,54 +3,51 @@ package org.jxtech.propertytrade.platform.property.persistence
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.jxtech.propertytrade.platform.property.persistence.config.PropertyJpaConfig
-import org.jxtech.propertytrade.platform.property.persistence.entity.Building
-import org.jxtech.propertytrade.platform.property.persistence.entity.BuildingType
+import org.jxtech.propertytrade.platform.property.persistence.entity.ImageResource
 import org.jxtech.propertytrade.platform.property.persistence.repository.BuildingRepository
+import org.jxtech.propertytrade.platform.property.persistence.repository.ImageResourceRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.context.annotation.Configuration
 import org.springframework.test.annotation.DirtiesContext
 import org.springframework.test.context.junit.jupiter.SpringExtension
-import java.math.BigDecimal
 import java.time.LocalDateTime
 
-@SpringBootTest(classes = [BuildingPersistenceTestConfig::class, PropertyJpaConfig::class])
+@SpringBootTest(classes = [ImageResourcePersistenceTestConfig::class, PropertyJpaConfig::class])
 @ExtendWith(SpringExtension::class)
-class BuildingPersistenceTest {
+class ImageResourcePersistenceTest {
     @Autowired
-    private lateinit var buildingRepository: BuildingRepository
+    private lateinit var imageResourceRepository: ImageResourceRepository
 
     @Test
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     fun performTest() {
-        val building = Building().apply {
-            this.name = "Builing1"
-            this.addressId = 1L
-            this.buildingType = BuildingType.APARTMENT
-            this.longitude = BigDecimal.valueOf(12.5)
-            this.latitude = BigDecimal.valueOf(31.3)
-            this.totalUnits = 5
-            this.totalStories = 3
-            this.totalFamilyNum = 3
-            this.builtYear = 1930
+        val imageResource = ImageResource().apply {
+            this.name = "image1"
+            this.description = "Description"
+            this.label = "LOBBY,LARGE"
+            this.imageFullPath = "/image/lobby-3111.png"
+            this.belongToEntityType = "PROPERTY"
+            this.referenceId = 1L
             this.version = 1L
             this.createdBy = "james"
             this.createdOn = LocalDateTime.now()
             this.lastUpdatedBy = "james"
             this.lastUpdatedOn = LocalDateTime.now()
         }
-        buildingRepository.save(building)
-        val buildingOptional = buildingRepository.findById(1L)
-        buildingOptional.map {
-            println(it.latitude)
-            println(it.longitude)
+        imageResourceRepository.save(imageResource)
+        val imageResourceOptional = imageResourceRepository.findById(1L)
+        imageResourceOptional.map {
             println(it.name)
+            println(it.imageFullPath)
+            println(it.belongToEntityType)
         }
     }
+
 }
 
 @Configuration
 @EnableAutoConfiguration
-class BuildingPersistenceTestConfig {
+class ImageResourcePersistenceTestConfig {
 }
