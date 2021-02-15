@@ -1,9 +1,12 @@
 package org.jxtech.propertytrade.platform.property.persistence.entity
 
 import org.jxtech.propertytrade.platform.common.persistence.entity.BaseEntity
+import org.jxtech.propertytrade.platform.common.persistence.entity.EntityStatus
 import java.math.BigDecimal
 import javax.persistence.Column
 import javax.persistence.Entity
+import javax.persistence.EnumType
+import javax.persistence.Enumerated
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
@@ -25,10 +28,24 @@ class PublicLocation(): BaseEntity() {
     @Column(name = "DESCRIPTION")
     var description: String? = null
 
+    @Column(name = "ADDRESS_ID")
+    var addressId: Long = -1L
+
     @Column(name = "LONGITUDE")
     var longitude: BigDecimal? = null
 
     @Column(name = "LATITUDE")
     var latitude: BigDecimal? = null
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "TYPE")
+    lateinit var type: PublicLocationType
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "STATUS")
+    var status: EntityStatus = EntityStatus.ACTIVE
+}
+
+enum class PublicLocationType {
+    PARK
 }

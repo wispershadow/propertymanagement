@@ -34,6 +34,11 @@ class PropertyPersistenceTest {
             this.setTagsList(listOf("Big", "comfortable"))
         }
         propertyRepository.save(property)
+        val propertyOptional = propertyRepository.findById(1L)
+        propertyOptional.map {
+            println(it.name)
+            println(it.size)
+        }
     }
 }
 

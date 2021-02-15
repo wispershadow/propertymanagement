@@ -44,13 +44,13 @@ class Building(): BaseEntity() {
     @Column(name = "TOTAL_UNITS")
     var totalUnits: Int = 0
 
-    @Column(name = "TOTAL_STORIES INT NOT NULL")
+    @Column(name = "TOTAL_STORIES")
     var totalStories: Int = 0
 
     @Column(name = "TOTAL_FAMILY_NUM")
     var totalFamilyNum: Int = 0
 
-    @Column(name = "BUILT_YEAR INT")
+    @Column(name = "BUILT_YEAR")
     var builtYear: Int = 0
 
     @Enumerated(EnumType.STRING)
