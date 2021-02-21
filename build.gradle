@@ -34,6 +34,7 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter"
     implementation("org.springframework.boot:spring-boot-starter-web")
             //{ exclude(module: 'spring-boot-starter-tomcat') }
+    //implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
     //implementation "org.springframework.boot:spring-boot-starter-jetty"
     implementation "org.springframework.boot:spring-boot-starter-websocket"
     implementation "org.springframework:spring-messaging"
