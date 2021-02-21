@@ -26,6 +26,9 @@ class AddressComponent {
     @Column(name = "ADDRESS_DETAILS")
     var addressDetails: String = "{}"
 
+    @Column(name = "POSTAL_CODE")
+    var postalCode: String? = null
+
     @Column(name = "LOCATION_ID")
     var locationId: Long = -1
 

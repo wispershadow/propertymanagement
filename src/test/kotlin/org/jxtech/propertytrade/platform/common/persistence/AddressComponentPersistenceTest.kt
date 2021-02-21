@@ -3,7 +3,7 @@ package org.jxtech.propertytrade.platform.common.persistence
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.jxtech.propertytrade.platform.common.persistence.entity.AddressComponent
-import org.jxtech.propertytrade.platform.common.persistence.entity.CommonJpaConfig
+import org.jxtech.propertytrade.platform.common.persistence.config.CommonJpaConfig
 import org.jxtech.propertytrade.platform.common.persistence.repository.AddressComponentRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration

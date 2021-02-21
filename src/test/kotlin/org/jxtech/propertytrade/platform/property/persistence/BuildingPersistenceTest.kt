@@ -1,5 +1,6 @@
 package org.jxtech.propertytrade.platform.property.persistence
 
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.jxtech.propertytrade.platform.property.persistence.config.PropertyJpaConfig
@@ -25,7 +26,7 @@ class BuildingPersistenceTest {
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     fun performTest() {
         val building = Building().apply {
-            this.name = "Builing1"
+            this.name = "Building1"
             this.addressId = 1L
             this.buildingType = BuildingType.APARTMENT
             this.longitude = BigDecimal.valueOf(12.5)
@@ -47,6 +48,8 @@ class BuildingPersistenceTest {
             println(it.longitude)
             println(it.name)
         }
+        val buildingList = buildingRepository.findByNameIn(listOf("Building1", "Building2"))
+        Assertions.assertEquals(buildingList.size, 1)
     }
 }
 
