@@ -1,5 +1,6 @@
 package org.jxtech.propertytrade.platform.property.persistence
 
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.jxtech.propertytrade.platform.property.persistence.config.PropertyJpaConfig
@@ -39,6 +40,8 @@ class PropertyPersistenceTest {
             println(it.name)
             println(it.size)
         }
+        val propertyList = propertyRepository.findByNameIn(listOf("property1", "property2"))
+        Assertions.assertEquals(propertyList.size, 1)
     }
 }
 

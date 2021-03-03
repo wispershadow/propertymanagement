@@ -1,0 +1,10 @@
+<nav aria-label="breadcrumb" id="{{breadcrumbId}}">
+  <ol class="breadcrumb">
+    <li ng-repeat="curBreadcrumb in breadcrumbItems"
+	    ng-class="curBreadcrumb.active? 'breadcrumb-item active' : 'breadcrumb-item'"
+	    ng-attr-aria-current="{{curBreadcrumb.active? 'page': undefined}}"
+	>	
+	  <a href="{{curBreadcrumb.link}}">{{curBreadcrumb.name}}</a>
+	</li>
+  </ol>
+</nav>

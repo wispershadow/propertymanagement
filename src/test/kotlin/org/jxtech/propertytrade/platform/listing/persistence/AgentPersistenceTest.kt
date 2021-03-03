@@ -1,5 +1,6 @@
 package org.jxtech.propertytrade.platform.listing.persistence
 
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.jxtech.propertytrade.platform.listing.persistence.config.ListingJpaConfig
@@ -56,6 +57,10 @@ class AgentPersistenceTest {
             println(pa.firstName)
         }
 
+        val companyAgentOption = agentRepository.findCompanyAgentByName("company1")
+        Assertions.assertTrue(companyAgentOption.isPresent)
+        val personalAgentOption = agentRepository.findPersonalAgentByName("james", "zhan", null)
+        Assertions.assertTrue(personalAgentOption.isPresent)
     }
 
 }

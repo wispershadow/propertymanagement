@@ -68,6 +68,7 @@ CREATE TABLE M_ADDRESS_COMPONENT
    ADDRESS_SCHEMA VARCHAR(500),   -- handle different address format in different region, attribute name, length etc, can be used to validate address
    ADDRESS_DETAILS VARCHAR(500) NOT NULL, -- json format address details eg: {"address_1", "address_2", "address_3"}
    REGION VARCHAR(20) NOT NULL,
+   POSTAL_CODE VARCHAR(30),
    LOCATION_ID BIGINT,
    FULL_LOCATION_PATH VARCHAR(100) -- list of locations from root separated by ','
 );

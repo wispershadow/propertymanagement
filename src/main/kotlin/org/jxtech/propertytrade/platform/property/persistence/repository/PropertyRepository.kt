@@ -4,4 +4,5 @@ import org.jxtech.propertytrade.platform.property.persistence.entity.Property
 import org.springframework.data.repository.CrudRepository
 
 interface PropertyRepository: CrudRepository<Property, Long> {
+    fun findByNameIn(nameList: List<String>): List<Property>
 }

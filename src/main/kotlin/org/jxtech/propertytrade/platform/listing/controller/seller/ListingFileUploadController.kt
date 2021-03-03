@@ -121,6 +121,8 @@ class ListingFileUploadConverter: Converter<List<Pair<String, Any?>>, Listing> {
     }
 }
 
+
+
 class ListingCreatedEventConverter: Converter<Listing, ListingCreatedEvent> {
     override fun convert(source: Listing): ListingCreatedEvent {
         return ListingCreatedEvent(source.id, source.description.orEmpty(),

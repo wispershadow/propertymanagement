@@ -1,4 +1,4 @@
-package org.jxtech.propertytrade.platform.common.persistence.entity
+package org.jxtech.propertytrade.platform.common.persistence.config
 
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.boot.autoconfigure.domain.EntityScan
