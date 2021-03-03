@@ -2,12 +2,9 @@ package org.jxtech.propertytrade.platform.property.service.impl
 
 import org.jxtech.propertytrade.platform.common.persistence.BatchMergeContext
 import org.jxtech.propertytrade.platform.common.persistence.BatchMergeHelper
-import org.jxtech.propertytrade.platform.common.persistence.entity.AddressComponent
 import org.jxtech.propertytrade.platform.common.persistence.setCommonFieldsBeforeCreate
 import org.jxtech.propertytrade.platform.common.service.AddressService
-import org.jxtech.propertytrade.platform.common.service.data.AddressComponentDto
 import org.jxtech.propertytrade.platform.common.service.data.AddressSaveRequest
-import org.jxtech.propertytrade.platform.common.service.impl.AddressComponentDtoPopulator
 import org.jxtech.propertytrade.platform.property.persistence.entity.Building
 import org.jxtech.propertytrade.platform.property.persistence.repository.BuildingRepository
 import org.jxtech.propertytrade.platform.property.service.BuildingService
@@ -15,7 +12,6 @@ import org.jxtech.propertytrade.platform.property.service.data.BuildingDto
 import org.jxtech.propertytrade.platform.property.service.data.BuildingSaveRequest
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import java.lang.IllegalArgumentException
 
 class DefaultBuildingService(
     val buildingRepository: BuildingRepository,
@@ -72,7 +68,7 @@ class DefaultBuildingService(
 
     private fun extractBuildingSearchKey(buildingSaveRequest: BuildingSaveRequest,
         batchMergeContext: BatchMergeContext<BuildingSaveRequest, String, Building, Long>): String {
-        return buildingSaveRequest.addressSaveRequest.getConcatAddressString()
+        return buildingSaveRequest.getFullName()
     }
 
     private fun extractNameFromBuilding(building: Building,

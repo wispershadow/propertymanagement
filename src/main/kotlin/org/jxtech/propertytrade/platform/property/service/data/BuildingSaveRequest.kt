@@ -11,4 +11,8 @@ class BuildingSaveRequest {
     var totalStories: Int = 0
     var totalFamilyNum: Int = 0
     var builtYear: Int = 0
+
+    fun getFullName(): String {
+        return addressSaveRequest.getConcatAddressString()
+    }
 }

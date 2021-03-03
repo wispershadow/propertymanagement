@@ -1,6 +1,7 @@
 package org.jxtech.propertytrade.platform.common.util.excel
 
 import org.apache.poi.ss.usermodel.CellType
+import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import org.jxtech.propertytrade.platform.common.DataSet
 import org.jxtech.propertytrade.platform.common.util.file.FileParseErrors
@@ -79,7 +80,8 @@ object ExcelParsingUtil {
         rowIterator.forEachRemaining {row ->
             if (!hasHeaderRow || rowNum > 1) {
                 val rowValues = mutableListOf<Any?>()
-                row.cellIterator().forEachRemaining {cell ->
+                for (i in 0 until row.lastCellNum) {
+                    val cell = row.getCell(i, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK)
                     val cellValue = when (cell.cellType) {
                         CellType.BLANK -> null
                         CellType.BOOLEAN -> cell.booleanCellValue
