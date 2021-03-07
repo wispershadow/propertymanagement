@@ -11,11 +11,12 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "M_IMAGE_RESOURCE")
-@SequenceGenerator(name = "IMAGE_RESOURCE_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_IMAGE_RESOURCE_ID_SEQUENCE")
+//@SequenceGenerator(name = "IMAGE_RESOURCE_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_IMAGE_RESOURCE_ID_SEQUENCE")
 class ImageResource(): BaseEntity()  {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "IMAGE_RESOURCE_ID_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "IMAGE_RESOURCE_ID_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     var id: Long = 0
 

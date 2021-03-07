@@ -15,13 +15,14 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "T_LISTING_PRICE_ADJUST_HISTORY")
-@SequenceGenerator(name = "LISTING_PRICE_ADJUST_HISTORY_KEY", initialValue = 1, allocationSize = 1, sequenceName = "T_LISTING_PRICE_ADJUST_HISTORY_ID_SEQUENCE")
+//@SequenceGenerator(name = "LISTING_PRICE_ADJUST_HISTORY_KEY", initialValue = 1, allocationSize = 1, sequenceName = "T_LISTING_PRICE_ADJUST_HISTORY_ID_SEQUENCE")
 class ListingPriceAdjustHistory(
     @Column(name = "LISTING_ID")
     val listingId: Long = -1
 ) {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LISTING_ID_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LISTING_ID_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     var id: Long = 0
 

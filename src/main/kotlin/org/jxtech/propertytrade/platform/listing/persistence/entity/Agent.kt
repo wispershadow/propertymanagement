@@ -16,10 +16,11 @@ import javax.persistence.Table
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "M_AGENT")
-@SequenceGenerator(name = "AGENT_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_AGENT_ID_SEQUENCE")
+//@SequenceGenerator(name = "AGENT_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_AGENT_ID_SEQUENCE")
 abstract class Agent: BaseEntity() {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "AGENT_ID_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "AGENT_ID_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     open var id: Long = 0
 

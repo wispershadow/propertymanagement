@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://66.23.235.228:3306/propertymanagement
+    username: propertymgnt_rw
+    password: password
+    driverClassName: com.mysql.jdbc.Driver

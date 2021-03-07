@@ -2,10 +2,11 @@ spring:
   datasource:
     initialization-mode: always
     url: jdbc:h2:mem:propertytrade;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    platform: h2
+    # platform: h2
     username: sa
     password:
     driverClassName: org.h2.Driver
+
     hikari:
       connection-timeout: 60000
       maximum-pool-size: 5
@@ -23,8 +24,8 @@ spring:
   mvc:
     static-path-pattern: "/static/**"
   resources:
-    static-locations: "file:/C:/zhanjia/source/myowncode/propertymanagement/src/main/resources/web/"
-    # static-locations: "classpath:/web/css/,classpath:/web/html/,classpath:/web/js/"
+    # static-locations: "file:/C:/zhanjia/source/myowncode/propertymanagement/src/main/resources/web/"
+    static-locations: "classpath:/web/"
 server:
   port: 8081
   servlet:
