@@ -10,10 +10,11 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "M_ADDRESS_COMPONENT")
-@SequenceGenerator(name = "ADDRESS_COMPONENT_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_ADDRESS_COMPONENT_SEQUENCE")
+//@SequenceGenerator(name = "ADDRESS_COMPONENT_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_ADDRESS_COMPONENT_SEQUENCE")
 class AddressComponent {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ADDRESS_COMPONENT_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ADDRESS_COMPONENT_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     open var id: Long = 0
 

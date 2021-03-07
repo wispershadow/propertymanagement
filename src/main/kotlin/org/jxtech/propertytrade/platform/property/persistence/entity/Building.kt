@@ -15,10 +15,11 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "M_BUILDING")
-@SequenceGenerator(name = "BUILDING_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_BUILDING_ID_SEQUENCE")
+//@SequenceGenerator(name = "BUILDING_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_BUILDING_ID_SEQUENCE")
 class Building(): BaseEntity() {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BUILDING_ID_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BUILDING_ID_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     var id: Long = 0
 

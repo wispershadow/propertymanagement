@@ -18,7 +18,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "T_LISTING")
-@SequenceGenerator(name = "LISTING_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "T_LISTING_ID_SEQUENCE")
+//@SequenceGenerator(name = "LISTING_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "T_LISTING_ID_SEQUENCE")
 class Listing(
     @Column(name = "PROPERTY_ID")
     val propertyId: Long = -1,
@@ -27,7 +27,8 @@ class Listing(
     val agentId: Long = -1
 ): BaseEntity() {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LISTING_ID_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LISTING_ID_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     var id: Long = 0
 

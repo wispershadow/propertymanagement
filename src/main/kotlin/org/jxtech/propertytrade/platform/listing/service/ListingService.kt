@@ -1,7 +1,7 @@
 package org.jxtech.propertytrade.platform.listing.service
 
-import org.jxtech.propertytrade.platform.listing.persistence.entity.Listing
+import org.jxtech.propertytrade.platform.listing.service.data.ListingSaveRequest
 
 interface ListingService {
-    fun createListing(listing: Listing): Long
+    fun batchSave(saveRequests: List<ListingSaveRequest>, savedByUser: String): List<Long>
 }

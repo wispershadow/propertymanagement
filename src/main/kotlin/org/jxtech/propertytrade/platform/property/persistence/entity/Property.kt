@@ -14,13 +14,14 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "M_PROPERTY")
-@SequenceGenerator(name = "PROPERTY_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_PROPERTY_ID_SEQUENCE")
+//@SequenceGenerator(name = "PROPERTY_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_PROPERTY_ID_SEQUENCE")
 class Property(
     @Column(name = "BUILDING_ID")
     val buildingId: Long = -1
 ): BaseEntity() {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PROPERTY_ID_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PROPERTY_ID_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     var id: Long = 0
 

@@ -1,6 +1,7 @@
 package org.jxtech.propertytrade.platform.property.service.data
 
 class PropertySaveRequest {
+    lateinit var buildingSaveRequest: BuildingSaveRequest
     var propertyNo: String = ""
     var propertyDescription: String = ""
     var propertySize: String = ""
@@ -8,5 +9,8 @@ class PropertySaveRequest {
     var bathRoomNo: Int = 0
     var totalRoomNo: Int = 0
     var tags: String = ""
-    var buildingId: Long = -1
+
+    fun getFullName(): String {
+        return "${propertyNo}-${buildingSaveRequest.getFullName()}"
+    }
 }

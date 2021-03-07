@@ -10,7 +10,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "M_LOCATION_HIERARCHY")
-@SequenceGenerator(name = "LOCATION_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_LOCATION_HIERARCHY_ID_SEQUENCE")
+//@SequenceGenerator(name = "LOCATION_ID_KEY", initialValue = 1, allocationSize = 1, sequenceName = "M_LOCATION_HIERARCHY_ID_SEQUENCE")
 class Location(
     @Column(name = "NAME")
     val name: String,
@@ -22,7 +22,8 @@ class Location(
     val type: LocationType
 ): BaseEntity() {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LOCATION_ID_KEY")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LOCATION_ID_KEY")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     var id: Long = 0
 

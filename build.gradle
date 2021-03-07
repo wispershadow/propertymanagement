@@ -50,6 +50,8 @@ dependencies {
     implementation "org.apache.poi:poi-ooxml:4.1.2"
     implementation "javax.validation:validation-api:2.0.1.Final"
 
+    runtime "mysql:mysql-connector-java:8.0.23"
+
     testImplementation "io.mockk:mockk:${mockk_kotlin_version}"
     testImplementation "org.springframework:spring-test"
     testImplementation "org.springframework.boot:spring-boot-starter-test"

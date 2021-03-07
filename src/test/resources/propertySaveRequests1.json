@@ -1,0 +1,17 @@
+[
+  {"propertyNo": "#301", "propertyDescription": "good property 1", "propertySize": "30*50", "bedRoomNo": 3, "bathRoomNo": 1, "totalRoomNo": 4,
+   "buildingSaveRequest": {
+    "buildingDescription": "Sea view", "buildingType": "SINGLE_HOUSE", "totalUnit": 100, "totalStories": 12, "totalFamilyNum": 93, "builtYear": 1993
+   }
+  },
+  {"propertyNo": "#107", "propertyDescription": "good property 2", "propertySize": "40*60", "bedRoomNo": 2, "bathRoomNo": 1, "totalRoomNo": 3,
+    "buildingSaveRequest": {
+      "buildingDescription": "Sea view", "buildingType": "SINGLE_HOUSE", "totalUnit": 100, "totalStories": 12, "totalFamilyNum": 93, "builtYear": 1993
+    }
+  },
+  {"propertyNo": "#299", "propertyDescription": "good property 3", "propertySize": "30*70", "bedRoomNo": 4, "bathRoomNo": 2, "totalRoomNo": 6,
+    "buildingSaveRequest": {
+      "buildingDescription": "Town hall", "buildingType": "APARTMENT", "totalUnit": 100, "totalStories": 12, "totalFamilyNum": 93, "builtYear": 1993
+    }
+  }
+]
