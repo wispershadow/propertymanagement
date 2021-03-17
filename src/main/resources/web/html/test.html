@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  </head>
+  <body ng-app="propertyapp">
+	<div class="container" ng-controller="myCtrl">
+	  <div class="row">
+		<bootstrapbreadcrumb id="breadcrumb" items="breadCrumbItems"></bootstrapbreadcrumb>
+	  </div>
+	  <div class="row">
+	    <div class="col-6">
+            <bootstrapcarousel id="carousel1" items="carouselItems"></bootstrapcarousel>
+		</div>
+        <div class="col-6">
+            <div class="details">
+                <h3 class="building-title">85-15 Main Street #12J</h3>
+               <div class="details_info_price">
+                   <div class="price">
+                       $468,888  <span class="secondary_text">for sale</span>
+                   </div>
+               </div>
+               <div class="details_info">
+                   <span class='detail_cell first_detail_cell'>1,626 ft&sup2;</span><br/>
+                   <span class='detail_cell '>$288 per ft&sup2;</span><br/>
+                   <span class='detail_cell '>9 rooms</span><br/>
+                   <span class='detail_cell '>3 beds</span><br/>
+                   <span class='detail_cell last_detail_cell'>2 baths</span>
+               </div>
+            </div>
+		</div>
+	  </div>
+	</div>
+    <div class="row">
+      <div class="col-12">
+        <h2>About the listing</h2>
+        <div>Seller's Agent</div>
+        <div>
+
+        </div>
+        <div>Description</div>
+        <div>
+            <p>our Home SOLD in 30 Days GUARANTEE or I will pay you 5000*!<br/><br/>
+
+                No Gimmicks! For information on my Home Sold Guaranteed Program order a Free Report by contacting Me by phone, email or text<br/><br/>
+
+                Make sure to contact listing agent for more pictures and 3D virtual tour that is coming soon.<br/><br/>
+
+                Highest Floor and Largest Luxury Living accommodation for sale in the area. With one of the largest private and highest terrace in Briarwood. Recently renovated, all large 3 Bedrooms (flex/ convertible to a 4 bedroom), 2 Full Bathroom, Maintenance includes real estate tax and uniquely all utilities (cooking Gas, Electricity, Central AC/Heat you control in 4 zones!). 24 Hour Doorman. Literally Seconds From The Express Subway And Busses. Just across the street from the Park, Library, Playground, Shops, Restaurants as well as close to Highways, schools, minutes to JFK and La Guardia Airport, house of worships and more</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../js/angular-1.8.2.js"></script>
+  <script type="text/javascript" src="../js/angular-resource-1.8.2.js"></script>
+  <!-- script type="text/javascript" src="../js/angular-route-1.8.2.js"></script -->
+  <script type="text/javascript" src="../js/thirdparty/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="../js/thirdparty/bootstrap.js"></script>
+  <script type="text/javascript">
+    var propertyapp = angular.module('propertyapp', ['ngResource']);
+	propertyapp.controller('myCtrl', function($scope, $http) {
+		$http.get("../../property/1").then(function(response) {
+			var responseData = response.data;
+			$scope.breadCrumbItems = responseData.breadcrumb.items;
+			$scope.carouselItems = responseData.carousel.items;	
+		});
+	});
+  </script>
+  <script type="text/javascript" src="../js/directive/bootstrapcarousel.js"></script>
+  <script type="text/javascript" src="../js/directive/bootstrapbreadcrumb.js"></script>
+</html>

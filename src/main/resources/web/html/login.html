@@ -1,0 +1,10 @@
+<div ng-controller="LoginController">
+    <span ng-show="loginError">
+        {{loginErrorMessage}}
+    </span>
+    <form method="POST" action="/login">
+        <input type="text" name="username" ng-model="username"/>
+        <input type="password" name="password" ng-model="password"/>
+        <input type="button" value="login" ng-click="login()">
+    </form>
+</div>
