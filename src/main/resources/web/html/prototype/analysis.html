@@ -1,0 +1,509 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mutlileveldropdown.css">
+  </head>
+  <body>
+    <div class="main">
+	  <div class="header"></div>
+	  <div class="content">
+	    <div class="container">
+		  <div class="row align-items-start">
+		    <div class="col-12">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+		        <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+				    <li class="nav-item">
+                      <a class="nav-link" href="analysis.html">Analysis</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdownSearchRegions" 
+				      role="button" data-toggle="dropdown" aria-expanded="false">Search Listing
+				      </a>
+				      <ul class="dropdown-menu dropdown-menu-dark multi-level" aria-labelledby="dropdownSearchRegions">
+					    <li class="dropdown-submenu">
+					      <a tabindex="-1" href="#">US</a>
+                            <ul class="dropdown-menu">
+						      <li class="dropdown-submenu">
+						        <a href="propsearch.html">New Jersey</a>
+						      </li>
+                              <li class="dropdown-submenu">
+                                <a href="#">New York</a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="propsearch.html">Manhattan</a></li>
+                    	          <li><a href="propsearch.html">Brooklyn</a></li>
+                                </ul>
+                             </li>
+						    </ul>
+					      </a>	
+					    </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Forum</a>
+                    </li>
+                  </ul>
+			    </div>
+                <form>
+			      <a href="userprofile.html">Hello James</a>		  
+			    </form> 			
+		      </div>
+		    </nav>   
+			</div>
+		  </div>
+		  <div class="row align-items-center gy-100">
+		    <div class="col-12"></div> 
+		    <div class="col-12">
+			<ul class="nav nav-tabs mb-3" id="ananlysis-tab" role="tablist">
+			  <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="nav-summary-tab" data-toggle="tab" 
+				href="#nav-summary" role="tab" aria-controls="nav-summary" aria-selected="true">Summary</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="nav-screen-tab" data-toggle="tab" 
+				href="#nav-screen" role="tab" aria-controls="nav-screen" aria-selected="false">Screen</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="nav-volumn-tab" data-toggle="tab" 
+				href="#nav-volumn" role="tab" aria-controls="nav-volumn" aria-selected="false">Volumn</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="nav-news-tab" data-toggle="tab" 
+				href="#nav-news" role="tab" aria-controls="nav-news" aria-selected="false">News</a>
+              </li>
+			  <li class="nav-item" role="presentation">
+                <a class="nav-link" id="nav-trend-tab" data-toggle="tab" 
+				href="#nav-trend" role="tab" aria-controls="nav-trend" aria-selected="false">Trend</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="navs-tabContent">
+			  <div class="tab-pane fade show active" id="nav-summary" role="tabpanel" aria-labelledby="nav-summary-tab">
+			    <div class="row align-items-start">
+		          <div class="col-3">
+			        <ul id="tree1">
+                      </p>
+				      <li>
+				        <a href="#">New York</a>
+				        <ul>
+				          <li>
+                            <a href="#">Manhattan</a>
+                            <ul>
+                              <li>
+					            <a href="#">flatiron</a>
+					          </li>
+                              <li>
+					            <a href="#">Tribeca</a>
+                              </li>
+                              <li>
+					            <a href="#">West Village</a> 	
+					          </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Brooklyn</a>
+                            <ul>
+                              <li>
+					            <a href="#">Brooklyn Heights</a>
+					          </li>
+                              <li>
+					            <a href="#">Bushwick</a>
+                              </li>
+                              <li>
+					            <a href="#">DUMBO</a> 	
+					          </li>
+                            </ul>
+                          </li>
+				        </ul>
+				      </li>  
+                    </ul>
+			      </div>
+			      <div class="col-9">
+				    <span>New York > Brookyln > Brooklyn Heights</span>
+				    <h5>Top 20 Gainer</h5>
+				    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Address</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Current Price</th>
+                          <th scope="col">Change</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>10 Montieth Street, Brooklyn, NY, 11206</td>
+                          <td>Condo</td>
+                          <td>13441.34</td>
+                          <td>10.34%</td>
+                        </tr>
+						<tr>
+                          <td>360 Furman Street, Brooklyn, NY, 11201</td>
+                          <td>Condo</td>
+                          <td>15441.34</td>
+                          <td>9.94%</td>
+                        </tr>
+					  </tbody>
+					</table> 
+                    <h5>Top 20 New High</h5>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Address</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Current Price</th>
+                          <th scope="col">Change</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>168 Plymouth Street, Brooklyn, NY, 11201</td>
+                          <td>Condo</td>
+                          <td>17041.34</td>
+                          <td>7.34%</td>
+                        </tr>
+						<tr>
+                          <td>150 Eagle Street, Brooklyn , NY, 11222</td>
+                          <td>Condo</td>
+                          <td>11999.34</td>
+                          <td>5.34%</td>
+                        </tr>
+					  </tbody>
+					</table>  
+                    <h5>Top 20 Loser</h5>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Address</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Current Price</th>
+                          <th scope="col">Change</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2940 West 5th Street, Brooklyn, NY, 11224</td>
+                          <td>Condo</td>
+                          <td>13441.34</td>
+                          <td>9.81%</td>
+                        </tr>
+						<tr>
+                          <td>125 Court Street, Brooklyn, NY, 11201</td>
+                          <td>Condo</td>
+                          <td>13441.34</td>
+                          <td>10.34%</td>
+                        </tr>
+					  </tbody>
+					</table>
+                    <h5>Top 20 New Low</h5>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Address</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Current Price</th>
+                          <th scope="col">Change</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2928 West 5th Street, Brooklyn, NY, 11224</td>
+                          <td>Condo</td>
+                          <td>6491.34</td>
+                          <td>8.01%</td>
+                        </tr>
+						<tr>
+                          <td>306 Gold Street, Brooklyn, NY, 11201</td>
+                          <td>Condo</td>
+                          <td>7841.34</td>
+                          <td>9.23%</td>
+                        </tr>
+					  </tbody>
+					</table>  		  					
+			      </div>
+				</div>
+			  </div> 
+              <div class="tab-pane fade" id="nav-screen" role="tabpanel" aria-labelledby="nav-screen-tab">
+			    <div class="row align-items-start">
+		          <div class="col-3">
+			        <ul id="tree1">
+                      </p>
+				      <li>
+				        <a href="#">New York</a>
+				        <ul>
+				          <li>
+                            <a href="#">Manhattan</a>
+                            <ul>
+                              <li>
+					            <a href="#">flatiron</a>
+					          </li>
+                              <li>
+					            <a href="#">Tribeca</a>
+                              </li>
+                              <li>
+					            <a href="#">West Village</a> 	
+					          </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Brooklyn</a>
+                            <ul>
+                              <li>
+					            <a href="#">Brooklyn Heights</a>
+					          </li>
+                              <li>
+					            <a href="#">Bushwick</a>
+                              </li>
+                              <li>
+					            <a href="#">DUMBO</a> 	
+					          </li>
+                            </ul>
+                          </li>
+				        </ul>
+				      </li>  
+                    </ul>
+			      </div>
+			      <div class="col-9">
+				    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Address</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Current Price</th>
+                          <th scope="col">Number of historical listing</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+						  <td>2928 West 5th Street, Brooklyn, NY, 11224</td>
+                          <td>Condo</td>
+                          <td><font color="red">6491.34 ↓</font></td>
+						  <td><a href="#" data-toggle="modal" data-target="#priceHistoryModal">2</a></td>
+						</tr>
+						<tr>
+						  <td>150 Eagle Street, Brooklyn , NY, 11222</td>
+                          <td>Condo</td>
+                          <td><font color="green">13441.34 ↑</font></td>
+						  <td><a href="#" data-toggle="modal" data-target="#priceHistoryModal">3</a></td>
+						</tr>
+					  </tbody>
+					</table>  
+				  </div>
+				</div>  
+			  </div>	
+              <div class="tab-pane fade" id="nav-volumn" role="tabpanel" aria-labelledby="nav-volumn-tab">
+			    <select>
+				  <option value="1">2021/03/15-2021/03/21</option>	
+				  <option value="2">2021/03/08-2021/03/14</option>	
+				  <option value="3">2021/03/01-2021/03/07</option>	
+				</select>
+			    <div id="tradePriceContainer"></div>
+			    <div id="tradeVolContainer"></div>
+			  </div>
+              <div class="tab-pane fade" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
+			    <div class="list-group">
+				  <div class="list-group-item list-group-item-action flex-column align-items-start">
+				    <h5 class="mb-1">Commercial real estate could ‘continue to worsen’ at the beginning of 2021: economist</h5>
+					<p class="mb-1">Calvin Schnure, Nareit’s Senior Economist, joins Yahoo Finance’s Seana Smith to discuss the real estate market ...</p>
+					<small>source: yahoo finance</small>		
+				  </div>		  
+				</div>
+			  </div>
+			  <div class="tab-pane fade" id="nav-trend" role="tabpanel" aria-labelledby="nav-trend-tab">...</div>
+            </div>
+			</div>
+		  </div>
+		</div> 
+	  </div>
+	</div>  
+	<div class="modal fade" id="priceHistoryModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Price History</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="tradePriceHistory"></div>
+          </div>
+        </div>
+      </div>   		
+    </div>
+  </div>
+</div>
+  </body>
+  <script type="text/javascript" src="../../js/thirdparty/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="../../js/thirdparty/bootstrap.js"></script>
+  <script type="text/javascript" src="../../js/thirdparty/bootstraptree.js"></script>
+  <script type="text/javascript" src="../../js/thirdparty/highcharts.js"></script>
+  <script type="text/javascript">
+	Highcharts.chart('tradePriceContainer', {
+	  chart: {
+	    type: 'column' 
+	  },
+	  title: {
+        text: 'Trade Price Per Week (2021/03/15-2021/03/21)'
+      },
+      subtitle: {
+        text: 'Average/max/min deal price per area'
+      },
+      xAxis: {
+        categories: [
+            'Manhattan',
+            'Brooklyn',
+            'Queens',
+            'Bronx',
+            'Staten Island',
+            'New Jersey'
+        ],
+        crosshair: true
+      },
+      yAxis: {
+        min: 0,
+        title: {
+            text: 'Trade price'
+        }
+      },
+	  
+	  plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+      },
+	  
+	  series: [{
+        name: 'Max Trade Price',
+        data: [13000.45, 17000.31, 14194.31, 11983.82, 20031.31, 19318.13]
+      }, {
+        name: 'Min Trade Price',
+        data: [10421.19, 14511.23, 10083.32, 9400.34, 15671.23, 14988.42]
+      }, {
+        name: 'Average Trade Price',
+        data: [12200.41, 15993.34, 12000.23, 10311.31, 17931.31, 16311.31]
+      }, {
+        name: 'Max Listing Price',
+        data: [14000.45, 18000.31, 15194.31, 12983.82, 21031.31, 18318.13]
+      }, {
+        name: 'Min Listing Price',
+        data: [11421.19, 15511.23, 11083.32, 9900.34, 16671.23, 15988.42]
+      }, {
+        name: 'Average Listing Price',
+        data: [13200.41, 16993.34, 13000.23, 11311.31, 18931.31, 17311.31]
+      }]
+	});
+	
+	
+	Highcharts.chart('tradeVolContainer', {
+	  chart: {
+	    type: 'column' 
+	  },
+	  title: {
+        text: 'Trade Volumn Per Week (2021/03/15-2021/03/21)'
+      },
+      subtitle: {
+        text: 'Number of listing per area'
+      },
+      xAxis: {
+        categories: [
+            'Manhattan',
+            'Brooklyn',
+            'Queens',
+            'Bronx',
+            'Staten Island',
+            'New Jersey'
+        ],
+        crosshair: true
+      },
+      yAxis: {
+        min: 0,
+        title: {
+            text: 'Trade price'
+        }
+      },
+	  
+	  plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+      },
+	  
+	  series: [{
+        name: 'Number of listing',
+        data: [13, 18, 12, 13, 11, 26]
+      }, {
+        name: 'Number of trade',
+        data: [10, 15, 11, 10, 9, 23]
+      }]
+	});
+	
+	Highcharts.chart('tradePriceHistory', {
+      title: {
+        text: 'Listing history, 2019-2021'
+      },
+
+      subtitle: {
+        text: 'Source: thesolarfoundation.com'
+      },
+
+      yAxis: {
+        title: {
+            text: 'Listing Price'
+        }
+      },
+
+      xAxis: {
+	    categories: [
+            '2019/08',
+            '2019/09',
+            '2019/10',
+            '2019/11',
+            '2019/12',
+			'2020/01',
+            '2020/02',
+            '2020/03',
+            '2020/04',
+            '2020/05',
+			'2020/06',
+            '2020/07',
+            '2020/08',
+            '2020/09',
+            '2020/10',
+            '2020/11',
+            '2020/12',
+			'2021/01',
+			'2020/02',
+        ], 
+      },
+
+      legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+      },
+
+      plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            }
+        }
+      },
+
+      series: [{
+        name: 'Listing 1 (2019/08-2019/10)',
+        data: [13122.13, 13145.13, 13191.10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }, {
+        name: 'Listing 2 (2020/07-2020/08)',
+        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14110.34, 14001.13, 0, 0, 0, 0, 0, 0]
+      }, {
+        name: 'Listing 3 (2021/01-2021/02)',
+        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13993.13, 13193.45]
+      }]
+	}); 
+  </script>
+</html>  
