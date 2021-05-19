@@ -7,6 +7,8 @@ import org.springframework.security.config.oauth2.client.CommonOAuth2Provider
 import org.springframework.security.oauth2.client.registration.ClientRegistration
 
 //@Configuration
+//https://spring.io/blog/2018/03/06/using-spring-security-5-to-integrate-with-oauth-2-secured-services-such-as-facebook-and-github
+//https://stackoverflow.com/questions/56293978/successful-spring-oauth2-login-with-empty-authorities
 class ThirdPartyOauthLoginConfig: WebSecurityConfigurerAdapter() {
 
     //ClientRegistrationRepository:
